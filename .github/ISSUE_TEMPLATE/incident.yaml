@@ -2,7 +2,7 @@ name: Incident Report
 description: File an Incident report
 title: "[Incident]: "
 labels: ["incident"]
-projects: ["bijualappatt/1"]
+projects: ["bijualappatt/4"]
 #assignees:
 #  - octocat
 body:
