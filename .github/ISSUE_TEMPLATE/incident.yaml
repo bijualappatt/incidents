@@ -1,0 +1,86 @@
+name: Incident Report
+description: File an Incident report
+title: "[Incident]: "
+labels: ["incident", "triage"]
+#projects: ["octo-org/1", "octo-org/44"]
+#assignees:
+#  - octocat
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this incident report!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: input
+    id: incident_detection_time
+    attributes:
+      label: Date and Time of Detection
+      description: Date and Time of the incident detected
+      placeholder: ex. 01-01-2023 10:10:00 AM
+    validations:
+      required: true
+  - type: input
+    id: incident_reported_time
+    attributes:
+      label: Date and Time of Reported
+      description: Date and Time of the incident Reported
+      placeholder: ex. 01-01-2023 10:10:00 AM
+    validations:
+      required: true
+  - type: dropdown
+    id: incident_type
+    attributes:
+      label: Incident Type
+      description: Incident Type
+      options:
+        - Malware
+        - Data Breach
+        - Unauthorized Access
+        - DDoS Attack
+        - Social engineering attack
+        - Insider threat
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: incident_severity_level
+    attributes:
+      label: Severity Level
+      description: Incident Severity Level
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: incident_priority_level
+    attributes:
+      label: Priority Level
+      description: Incident Priority Level
+      options:
+        - Low
+        - Moderate
+        - High
+        - Critical
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: incident_description
+    attributes:
+      label: Description of Incident
+      description: What went wrong
+      placeholder: Tell us what you see!
+      value: "An incident happened!"
+    validations:
+      required: true
