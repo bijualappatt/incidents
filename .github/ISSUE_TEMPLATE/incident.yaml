@@ -1,8 +1,8 @@
 name: Incident Report
 description: File an Incident report
 title: "[Incident]: "
-labels: ["incident", "triage"]
-#projects: ["octo-org/1", "octo-org/44"]
+labels: ["incident"]
+projects: ["Incident Management"]
 #assignees:
 #  - octocat
 body:
